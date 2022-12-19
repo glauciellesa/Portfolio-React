@@ -1,9 +1,8 @@
-import "./App.css";
 import About from "./components/About";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import NavBar from "./components/NavBar";
+import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import CSSReset from "./theme/components/CSSReset";
@@ -14,7 +13,7 @@ function App() {
     <>
       <MyThemeProvider>
         <CSSReset />
-        <NavBar />
+        <Header />
         <Home />
         <About />
         <Skills />

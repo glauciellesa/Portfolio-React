@@ -9,7 +9,6 @@ const CSSReset = createGlobalStyle`
   }
   body {
     font-family: 'Montserrat', sans-serif;
-    background-color: red;
   }
   
 `;

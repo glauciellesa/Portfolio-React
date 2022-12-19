@@ -1,5 +1,5 @@
 export const theme = {
-  logoHeight: "90px",
+  fontFamilly: "Poppins",
   headerHeight: "90px",
   menuTopHeight: "60px",
   asideWidth: "225px",
