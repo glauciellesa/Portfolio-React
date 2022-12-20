@@ -31,8 +31,6 @@ function ToggleTheme() {
 }
 
 const StyledToggle = styled.div`
-  margin-top: 15px;
-  margin-left: 10px;
   background-color: #333333;
   border: 0;
   padding: 3px;
@@ -41,6 +39,7 @@ const StyledToggle = styled.div`
   height: 25px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-radius: 10000px;
   position: relative;
   label {

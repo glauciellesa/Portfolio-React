@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Logo from "./Logo";
+import NavItem from "./NavItem";
 import ToggleTheme from "./toggle/ToggleTheme";
 export default () => {
   return (
@@ -7,22 +8,22 @@ export default () => {
       <div>
         <Logo />
       </div>
-      <div className="navBar">
-        <div className="home">
-          <a href="/home">Home</a>
-        </div>
-        <div className="about">
-          <a href="/about">About</a>
-        </div>
-        <div className="skills">
-          <a href="/skills">Skills</a>
-        </div>
-        <div className="portfolio">
-          <a href="/portfolio">Portifolio</a>
-        </div>
-        <div className="contact">
-          <a href="/contact">Contact me</a>
-        </div>
+      <div className="nav">
+        <NavItem className="home" href="/home">
+          Home
+        </NavItem>
+        <NavItem className="user" href="/about">
+          About
+        </NavItem>
+        <NavItem className="file" href="/skills">
+          Skills
+        </NavItem>
+        <NavItem className="image" href="/portfolio">
+          Portfolio
+        </NavItem>
+        <NavItem className="paper-plane" href="/contact">
+          Contact me
+        </NavItem>
         <ToggleTheme />
       </div>
     </StyledHeader>
@@ -31,23 +32,18 @@ export default () => {
 
 const StyledHeader = styled.nav`
   font-family: ${({ theme }) => theme.fontFamilly};
-  font-size: 14px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   box-shadow: ${({ theme }) => theme.shadowNav};
   background-color: ${({ theme }) => theme.dark};
-  padding: 20px;
+  padding: 10px;
   width: 100vw;
-  .navBar {
-    z-index: 100;
+
+  .nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-
-    a {
-      text-decoration: none;
-      color: ${({ theme }) => theme.light};
-    }
+    gap: 14px;
   }
 `;

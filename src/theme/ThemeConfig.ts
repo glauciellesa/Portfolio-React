@@ -1,5 +1,5 @@
 export const theme = {
-  fontFamilly: "Poppins",
+  fontFamilly: "Poppins, sans-serif",
   headerHeight: "90px",
   menuTopHeight: "60px",
   asideWidth: "225px",
