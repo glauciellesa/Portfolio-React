@@ -7,11 +7,12 @@ import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import CSSReset from "./theme/components/CSSReset";
 import MyThemeProvider from "./theme/contexts/ThemeContext";
+import styled from "styled-components";
 
 function App() {
   return (
-    <>
-      <MyThemeProvider>
+    <MyThemeProvider>
+      <StyledBody>
         <CSSReset />
         <Header />
         <Home />
@@ -20,9 +21,14 @@ function App() {
         <Portfolio />
         <ContactMe />
         <Footer />
-      </MyThemeProvider>
-    </>
+      </StyledBody>
+    </MyThemeProvider>
   );
 }
+
+const StyledBody = styled.div`
+  background-color: ${({ theme }) => theme.bodyColor};
+  height: 100vh;
+`;
 
 export default App;

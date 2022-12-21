@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const CSSReset = createGlobalStyle`
   /* Reset */
+
   * {
     margin: 0;
     padding: 0;

@@ -5,5 +5,8 @@ export default () => {
 
 const StyledLogo = styled.div`
   font-size: 20px;
-  color: ${({ theme }) => theme.light};
+  color: ${({ theme }) => theme.titleColor};
+  :hover {
+    color: ${({ theme }) => theme.firstColor};
+  }
 `;

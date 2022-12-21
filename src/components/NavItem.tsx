@@ -19,11 +19,11 @@ export default (props: Props) => {
 const StyledNavbar = styled.div`
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.light};
+    color: ${({ theme }) => theme.titleColor};
     display: flex;
     gap: 5px;
-  }
-  i {
-    display: none;
+    svg {
+      display: none;
+    }
   }
 `;
