@@ -1,21 +1,18 @@
 import { useState } from "react";
 import styled from "styled-components";
-
 import Logo from "./Logo";
 import NavItem from "./NavItem";
 import ToggleTheme from "./toggle/ToggleTheme";
+
 export default () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const handleToggle = () => {
-    console.log(navbarOpen);
     setNavbarOpen((navbarOpen) => !navbarOpen);
   };
 
   return (
     <StyledHeader>
-      <div>
-        <Logo />
-      </div>
+      <Logo />
       <div className="navBar">
         <button className="mobileToggle" onClick={handleToggle}>
           {navbarOpen ? (
@@ -56,7 +53,7 @@ const StyledHeader = styled.div`
   width: 100vw;
   height: 30px;
   font-family: ${({ theme }) => theme.fontFamilly};
-  font-size: 14px;
+  font-size: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,7 +72,6 @@ const StyledHeader = styled.div`
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding: 0 16px;
   }
   .nav :hover {
     color: ${({ theme }) => theme.firstColor};
