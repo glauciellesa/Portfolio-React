@@ -11,6 +11,7 @@ const CSSReset = createGlobalStyle`
   }
   body {
    /*  font-family: 'Montserrat', sans-serif; */
+   overflow-x: hidden;
   }
   
 `;
