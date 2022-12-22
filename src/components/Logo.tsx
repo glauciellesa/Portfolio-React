@@ -4,6 +4,7 @@ export default () => {
 };
 
 const StyledLogo = styled.div`
+  display: flex;
   font-size: 20px;
   color: ${({ theme }) => theme.titleColor};
   :hover {

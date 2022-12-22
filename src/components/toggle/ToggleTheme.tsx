@@ -33,10 +33,10 @@ function ToggleTheme() {
 const StyledToggle = styled.div`
   background-color: #333333;
   border: 0;
-  padding: 3px;
+  padding: 2px;
   font-size: 12px;
-  width: 50px;
-  height: 25px;
+  width: 38px;
+  height: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -47,8 +47,8 @@ const StyledToggle = styled.div`
   }
   span {
     display: inline-flex;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     align-items: center;
     justify-content: center;
   }
@@ -57,13 +57,14 @@ const StyledToggle = styled.div`
     content: "";
     background-color: #fafafa;
     border: 1px solid #333333;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     border-radius: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
+    right: 0;
     transition: 0.3s;
     cursor: pointer;
   }
